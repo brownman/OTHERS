@@ -1,0 +1,34 @@
+toilet (0.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * This release includes some ASCII-only fonts (Closes: #560334).
+  * debian/control: build-depend on libcaca 0.99.beta18 which fixes the
+    terminal width setting (Closes: #636939 ).
+
+ -- Sam Hocevar <sho@debian.org>  Fri, 06 Apr 2012 23:40:44 +0200
+
+toilet (0.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control: Set policy to 3.8.4.
+  * debian/source/format: Set format to 3.0 (quilt).
+
+ -- Sam Hocevar <sho@debian.org>  Tue, 09 Feb 2010 01:11:55 +0000
+
+toilet (0.1-2) unstable; urgency=high
+
+  * debian/control:
+    + Changed conflict to figlet (<= 2.2.1-4) so that toilet and figlet can
+      be installed together in Etch.
+    + Added Vcs fields.
+  * debian/rules:
+    + Fix a crash in filter.c triggered eg. by "echo | toilet -F rotate".
+
+ -- Sam Hocevar (Debian packages) <sam+deb@zoy.org>  Thu, 29 Mar 2007 00:33:29 +0200
+
+toilet (0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #390037).
+
+ -- Sam Hocevar (Debian packages) <sam+deb@zoy.org>  Thu, 16 Nov 2006 03:32:10 +0100
+

@@ -1,0 +1,35 @@
+Source: toilet
+Section: libs
+Priority: optional
+Maintainer: Sam Hocevar <sho@debian.org>
+Build-Depends: debhelper (>= 5.0), pkg-config, libcaca-dev (>= 0.99.beta18), zlib1g-dev
+Standards-Version: 3.9.3
+XS-Vcs-Svn: svn://svn.debian.org/sam-hocevar/pkg-misc/unstable/toilet
+XS-Vcs-Browser: http://svn.debian.org/wsvn/sam-hocevar/pkg-misc/unstable/toilet/
+
+Package: toilet
+Section: text
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, toilet-fonts
+Suggests: figlet
+Conflicts: figlet (<= 2.2.1-4)
+Replaces: caca-utils
+Description: display large colourful characters in text mode
+ TOIlet prints text using large characters made of smaller characters.
+ It is similar in many ways to FIGlet with additional features such as
+ Unicode handling, colour fonts, filters and various export formats.
+ .
+ TOIlet can open FIGlet fonts and is mostly commandline-compatible with it.
+
+Package: toilet-fonts
+Section: text
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: toilet
+Replaces: caca-utils
+Description: collection of TOIlet fonts
+ TOIlet prints text using large characters made of smaller characters.
+ It is similar in many ways to FIGlet with additional features such as
+ Unicode handling, colour fonts, filters and various export formats.
+ .
+ This package contains a set of TOIlet-specific fonts.
