@@ -36,7 +36,7 @@ libdir = ${exec_prefix}/lib
 DATADIRNAME = share
 itlocaledir = $(prefix)/$(DATADIRNAME)/locale
 subdir = po
-install_sh = ${SHELL} /home/paretech/Downloads/do_for_others_first/6/VENDOR/gxmessage/gxmessage-2.20.0.ofer/install-sh
+install_sh = ${SHELL} /home/paretech/Downloads/do_for_others_first/.OTHERS/C/gxmessage-2.20.0.ofer/install-sh
 # Automake >= 1.8 provides /usr/bin/mkdir -p.
 # Until it can be supposed, use the safe fallback:
 mkdir_p = $(install_sh) -d
